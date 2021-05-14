@@ -1,0 +1,39 @@
+bot:
+  name: 'chtotibBot'
+  token: '1561541329:AAFr495joT5WNwzbx3vRPKHOGg7p__LhTKw'
+  daemons:
+    period: 1
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:
+    url: jdbc:postgresql://ec2-34-200-158-205.compute-1.amazonaws.com:5432/d4l15ha0q7fik6?stringtype=unspecified
+    password: 60529efc8c3ca43e7ed398776fc98c3978e6c8c194c7c1f58b0eb66634f3f78c
+    username: fbjfnxqsalkevb
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: never
+    tomcat:
+      validation-query: SELECT 1;
+      test-on-borrow: true
+      test-while-idle: true
+      validation-interval: 50000
+      time-between-eviction-runs-millis: 60000
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    generate-ddl: true
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 4
+          order_inserts: true
+  main:
+    web-application-type: none
+
+
