@@ -3,6 +3,7 @@ package karmanchik.chtotib.data.entity;
 import karmanchik.chtotib.data.enums.BotState;
 import karmanchik.chtotib.data.enums.Role;
 import karmanchik.chtotib.data.enums.UserState;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -12,6 +13,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Builder
+@AllArgsConstructor
 @Table(name = "chat_users")
 @EqualsAndHashCode(callSuper = true)
 public class ChatUser extends BaseEntity {

@@ -6,17 +6,18 @@
 
     <groupId>karmanchik.chtotib</groupId>
     <artifactId>chtotib</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
         <module>bots/telegram-bot</module>
         <module>server</module>
     </modules>
 
-    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
+        <java.version>15</java.version>
     </properties>
 
     <parent>
@@ -41,18 +42,23 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
+            <version>20180813</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 

@@ -53,7 +53,7 @@ public class StartHandler implements Handler {
                         "Я был создан для работы со студентами и педагогами ЧТОТиБ.%n" +
                         "Давай создадим твою анкету?!", chatUser.getUserName(), botUsername))
                 .replyMarkup(TelegramUtil.createReplyKeyboardMarkup()
-                        .keyboardRow(TelegramUtil.createKeyboardRow(List.of(Const.CREATE)))
+                        .keyboardRow(TelegramUtil.createKeyboardRow(List.of(Const.CREATE).toArray()))
                         .build())
                 .build());
     }

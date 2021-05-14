@@ -1,5 +1,6 @@
 package karmanchik.chtotib.data.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -11,6 +12,7 @@ import java.util.List;
 @Data
 @Entity
 @Builder
+@AllArgsConstructor
 @Table(name = "replacement")
 @EqualsAndHashCode(callSuper = true)
 public class Replacement extends BaseEntity {

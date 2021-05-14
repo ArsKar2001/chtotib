@@ -1,6 +1,7 @@
 package karmanchik.chtotib.data.entity;
 
 import karmanchik.chtotib.data.enums.WeekType;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -11,6 +12,7 @@ import java.util.List;
 @Data
 @Entity
 @Builder
+@AllArgsConstructor
 @Table(name = "lessons")
 @EqualsAndHashCode(callSuper = true)
 public class Lesson extends BaseEntity {
